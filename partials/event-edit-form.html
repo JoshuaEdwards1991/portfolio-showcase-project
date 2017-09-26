@@ -1,0 +1,51 @@
+<!-- all code is owned by Joshua Edwards @ quicksilver web ltd. please email Joshua@quicksilverweb.uk, re-use is prohibited -->
+<main class="container">
+    <div>
+        <ul class="breadcrumb">
+            <li><a href="#/event">Events</a></li>
+            <li class="active">Edit an Event</li>
+        </ul>
+    </div>
+    <div class="page-header">
+        <h1 title="Add">Edit an Event</h1>
+    </div>
+    <form method="POST" name="form" enctype="multipart/form-data" class="form-horizontal">
+        <div class="form-group">
+            <label id="event-title-label" for="events-title" class="col-sm-2 control-label">Title*</label>
+            <div class="col-sm-6">
+                <input type="text" ng-model="event.title" class="form-control" name="title"
+                       ng-class="{ 'has-error': form.title.$invalid }" required >
+                <p id="event-title-error" class="error"></p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label id="event-description-label" for="event-description" class="col-sm-2 control-label">Description*</label>
+            <div class="col-sm-6">
+                <textarea ng-model="event.description" class="form-control" rows="5" name="description"
+                          ng-class="{ 'has-error': form.description.$invalid }" required ></textarea>
+                <p id="role-description-error" class="error"></p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label id="event-date-label" for="event-date" class="col-sm-2 control-label">Image</label>
+            <div class="col-sm-6">
+                <div class="form-group form-horizontal">
+                    &nbsp;&nbsp;&nbsp;<img ng-if="event.picturename != NULL" ng-src="server/{{event.picturefilename}}" height="150px">
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label id="event-date-label" for="event-date" class="col-sm-2 control-label">&nbsp;</label>
+            <div class="col-sm-6">
+                <input type="file" ngf-select ng-model="file" name="file" class="upload" ngf-pattern="'image/*'">
+            </div>
+        </div>
+        <div id="save-all" class="form-group">
+            <div class="col-sm-2">
+                <button type="button" data-ng-click="editEvent()" ng-disabled="!form.$valid" ng-disabled="!form.$valid"
+                        class="btn btn-primary">Save Event</button>
+            </div>
+        </div>
+    </form>
+</main>
+<!-- /.container -->

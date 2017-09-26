@@ -1,0 +1,137 @@
+<!-- all code is owned by Joshua Edwards @ quicksilver web ltd. please email Joshua@quicksilverweb.uk, re-use is prohibited -->
+<main class="container" >
+    <div class="page-header">
+        <h1 title="Add">Custom Quote</h1>
+    </div>
+    <p>
+        <b> Create a custom quote by checking the components box. PC / Mac best supported.</b>
+    </p>
+    <br><br>
+
+    <div class="row">
+        <div class="col-xs-12 col-sm-3 col-md-2" style="padding-top: 5px;">
+            Select Pre-Configured Station:
+        </div>
+        <div class="col-xs-12 col-sm-3 col-md-3" style="padding-top: 5px;">
+            <select ng-model="selectedItemPackage" ng-change="updatePackage()">
+                <option selected="selected" value="none">None</option>
+                <option value="standard">Standard Package</option>
+                <option value="full">Full Package</option>
+            </select>
+        </div>
+        
+        <div class="col-xs-12 col-sm-2 col-md-2" style="padding-top: 5px;">
+            Select Colour of Station:
+        </div>
+        <div class="col-xs-12 col-sm-3 col-md-3" style="padding-top: 5px;">
+            <select ng-model="selectedItemColour" ng-change="updatePackage()">
+                <option selected="selected" value="Orange">Orange</option>
+                <option value="Blue">Blue</option>
+                <option value="Green">Green</option>
+                <option value="Yellow">Yellow</option>
+            </select>
+        </div>
+    </div>
+
+    <br><br>
+
+    <div class="row">
+        <div class="col-xs-5 col-sm-2 col-md-2">
+            <div class="container form-inline" style="text-align: center;">
+                <div ng-repeat="item in list8" ng-model='list8' style="height:145px; width: 175px;" >
+
+                    <div class="" style="width: 175px; padding:0px;"  >
+
+                        <img style="max-width: 175px;" src="{{item.url}}" alt="{{item.name}}" />
+                        <p>{{item.name}}</p>
+                        
+                        <input type="checkbox" ng-model="items[item.name]">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-6 col-sm-2 col-md-2">
+            <div class="container form-inline" style="text-align: center;">
+                <div ng-repeat="item in list7" ng-model='list7' style=" height:145px; width: 175px;" >
+
+                    <div class="" style="width: 175px; padding:0px;"  >
+
+                        <img style="max-width: 175px;" src="{{item.url}}" alt="{{item.name}}" />
+                        <p>{{item.name}}</p>
+
+                        <input type="checkbox" ng-model="items[item.name]">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-5 col-sm-2 col-md-2">
+            <div class="container form-inline" style="text-align: center;">
+                <div ng-repeat="item in list6" ng-model='list6' style=" height:145px; width: 175px;" >
+
+                    <div class="" style="width: 175px; padding:0px;"  >
+
+                        <img style="max-width: 175px;" src="{{item.url}}" alt="{{item.name}}" />
+                        <p>{{item.name}}</p>
+
+                        <input type="checkbox" ng-model="items[item.name]">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <img class="col-xs-12 col-sm-6 col-md-6" src="server/images/product-animation-images/{{selectedItemDisplayed}}">
+ 
+    </div>
+    <br><br>
+    <div class="row">
+        <form method="POST" name="form" enctype="multipart/form-data" class="form-horizontal">
+            <div class="form-group">
+                <label id="contact-name-label" for="contact-name" class="col-sm-2 control-label">Name*</label>
+                <div class="col-sm-9">
+                    <input type="text" ng-model="name" name="name" class="form-control" required no-special-chars>
+                    <p id="contact-name-error" class="error"></p>
+                </div>
+            </div>
+            <div class="form-group">
+                <label id="contact-position-label" for="contact-position" class="col-sm-2 control-label">Business*</label>
+                <div class="col-sm-9">
+                    <input type="text" ng-model="business" name="business" class="form-control" required no-special-chars>
+                    <p id="contact-position-error" class="error"></p>
+                </div>
+            </div>
+            <div class="form-group">
+                <label id="contact-position-label" for="contact-position" class="col-sm-2 control-label">Number*</label>
+                <div class="col-sm-9">
+                    <input id="phone" type="text" ng-model="phone" name="phone" class="form-control" required no-special-chars>
+                    <p id="contact-position-error" class="error"></p>
+                </div>
+            </div>
+            <div class="form-group">
+                <label id="contact-email-label" for="contact-email" class="col-sm-2 control-label">Email*</label>
+                <div class="col-sm-9">
+                    <input ng-model="email" type="email" name="email" class="form-control" required no-special-chars>
+                    <p id="contact-email-error" class="error"></p>
+                </div>
+            </div>
+            <div class="form-group">
+                <label id="contact-bio-label" for="contact-bio" class="col-sm-2 control-label">Message*</label>
+                <div class="col-sm-9">
+                    <textarea ng-model="message" class="form-control" name="message" rows="5" required></textarea>
+                    <p id="contact-bio-error" class="error"></p>
+                </div>
+            </div>
+
+
+            <div id="save-all" class="form-group">
+                <div class="col-sm-3">
+                    <button type="button" ng-click="insertQuote()" ng-disabled="!form.$valid" class="btn btn-primary">Send Quote</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+</main>
+
+<!-- /.container -->

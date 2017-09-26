@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--all code is owned by Joshua Edwards @ quicksilver web ltd. please email Joshua@quicksilverweb.uk, re-use is prohibited-->
+<config>
+   <title>SQLite File</title>
+   <username>root</username>
+   <password>root</password>
+   <dns>mysql:host=localhost:3306;dbname=sos_station;</dns>
+</config>

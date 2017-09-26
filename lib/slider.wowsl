@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VisualLightBox>
+    <Gallery version="2.5">
+        <Settings>
+            <AppName>WOW Slider</AppName>
+            <AppUrlS>WOWSlider.com</AppUrlS>
+            <AppVersion>8.7</AppVersion>
+            <AutoPlay>true</AutoPlay>
+            <AutoPlayVideo>false</AutoPlayVideo>
+            <Captions>true</Captions>
+            <CaptionsEffect>parallax</CaptionsEffect>
+            <Controls>true</Controls>
+            <FontSize>22</FontSize>
+            <FullScreen>false</FullScreen>
+            <GalleryName>slider</GalleryName>
+            <GallerySuffix>1</GallerySuffix>
+            <HtmlCharset>UTF-8</HtmlCharset>
+            <ImageAspectRatio>true</ImageAspectRatio>
+            <ImageEffect></ImageEffect>
+            <ImageFillColor>#000000</ImageFillColor>
+            <ImageHeight>768</ImageHeight>
+            <ImageQuality>90</ImageQuality>
+            <ImageShrink2>false</ImageShrink2>
+            <ImageStretch>true</ImageStretch>
+            <ImageTemplate>C:/Program Files (x86)/WOW Slider/templates/backgnd/easy/</ImageTemplate>
+            <ImageTemplateName>Easy</ImageTemplateName>
+            <ImageWidth>1024</ImageWidth>
+            <Images>true</Images>
+            <JoomlaType>2.5</JoomlaType>
+            <OneLoop>false</OneLoop>
+            <OrderRandom>false</OrderRandom>
+            <PlayPause>true</PlayPause>
+            <Preloader>false</Preloader>
+            <PublishFileName>C:/MAMP/htdocs/ECGroundworks/sos-station/wowslider.html</PublishFileName>
+            <PublishIndex>wowslider.html</PublishIndex>
+            <PublishPath>C:/MAMP/htdocs/ECGroundworks/sos-station</PublishPath>
+            <PublishPreview>true</PublishPreview>
+            <PublishType>file</PublishType>
+            <RelativePath>false</RelativePath>
+            <ShowBullets>1</ShowBullets>
+            <ShowControls>false</ShowControls>
+            <ShowTooltips>1</ShowTooltips>
+            <SizeStyle>2</SizeStyle>
+            <SlideshowDelay>61</SlideshowDelay>
+            <SlideshowDuration>30</SlideshowDuration>
+            <SoundEnable>0</SoundEnable>
+            <SoundFileName></SoundFileName>
+            <StopOnHover>false</StopOnHover>
+            <SwipeSupport>2</SwipeSupport>
+            <TemplateColor>#404449</TemplateColor>
+            <TemplateFont>Exo 2</TemplateFont>
+            <TemplateName>easy</TemplateName>
+            <ThumbAlign>bottom</ThumbAlign>
+            <ThumbFormat>jpg</ThumbFormat>
+            <ThumbHeight>48</ThumbHeight>
+            <ThumbQuality>90</ThumbQuality>
+            <ThumbWidth>0</ThumbWidth>
+            <Thumbnails>false</Thumbnails>
+            <TooltipPos>bottom</TooltipPos>
+            <noFrame>0</noFrame>
+        </Settings>
+        <Images RelativePath="false">
+            <Image>
+                <url>C:/Users/Joshu/Downloads/shutterstock_530392687.jpg</url>
+                <title>Find out more about SOS Station</title>
+                <filesize>5488736</filesize>
+            </Image>
+            <Image>
+                <url>C:/Users/Joshu/Downloads/shutterstock_327448124.jpg</url>
+                <title>Get a quote for your custom SOS Station configuration</title>
+                <filesize>7365578</filesize>
+            </Image>
+            <Image>
+                <url>C:/Users/Joshu/Downloads/shutterstock_158381648.jpg</url>
+                <title>Contact Us</title>
+                <filesize>7448592</filesize>
+            </Image>
+        </Images>
+    </Gallery>
+</VisualLightBox>
